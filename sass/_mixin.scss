@@ -1,0 +1,5 @@
+@mixin flexSettings($rowColumn, $justifyContent) {
+    display: flex;
+    flex-direction: $rowColumn;
+    justify-content: $justifyContent;
+}
