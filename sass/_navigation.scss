@@ -4,13 +4,19 @@
 }
 
 nav {
-    display: absolute;
-    height: 50px;
+    position: absolute;
+    height: 40px;
     width: 100%;
     background-color: black;
-    line-height: 50px;
+    line-height: 40px;
     font-family: 'Open Sans';
+    opacity: 70%;
+    z-index: 1;
+    transition: .5s linear;
 
+    &:hover {
+        opacity: 85%;
+    }
 
     ul {
         @include flexSettings(row, space-around);
@@ -24,6 +30,22 @@ nav {
                 font-size: 16px;
                 text-decoration: none;
                 color: white;
+                transition: .3s linear;
+
+                background-image: linear-gradient(to right,
+                        #427eff,
+                        #427eff 50%,
+                        rgb(255, 255, 255) 50%);
+
+                background-size: 200% 100%;
+                background-position: 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a:hover {
+                background-position: 0;
             }
         }
     }

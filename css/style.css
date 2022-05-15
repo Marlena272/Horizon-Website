@@ -4,12 +4,20 @@
 }
 
 nav {
-  display: absolute;
-  height: 50px;
+  position: absolute;
+  height: 40px;
   width: 100%;
   background-color: black;
-  line-height: 50px;
+  line-height: 40px;
   font-family: 'Open Sans';
+  opacity: 70%;
+  z-index: 1;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+nav:hover {
+  opacity: 85%;
 }
 
 nav ul {
@@ -38,6 +46,20 @@ nav ul li a {
   font-size: 16px;
   text-decoration: none;
   color: white;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  background-image: -webkit-gradient(linear, left top, right top, from(#427eff), color-stop(50%, #427eff), color-stop(50%, white));
+  background-image: linear-gradient(to right, #427eff, #427eff 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-position: 0;
 }
 
 .slider {
@@ -58,6 +80,9 @@ nav ul li a {
   0% {
     opacity: 0;
   }
+  5% {
+    opacity: 0;
+  }
   20% {
     opacity: 100%;
   }
@@ -71,6 +96,9 @@ nav ul li a {
 
 @keyframes imgChange {
   0% {
+    opacity: 0;
+  }
+  5% {
     opacity: 0;
   }
   20% {
