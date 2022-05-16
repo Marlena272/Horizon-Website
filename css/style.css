@@ -62,15 +62,20 @@ nav ul li a:hover {
   background-position: 0;
 }
 
-.slider {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.slider img {
+.slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.slider .sliderImg {
   position: absolute;
+  height: 100%;
   width: 100%;
   -webkit-animation: imgChange 5s linear infinite;
           animation: imgChange 5s linear infinite;
@@ -110,4 +115,16 @@ nav ul li a:hover {
   100% {
     opacity: 0%;
   }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.aboutTheGame {
+  position: relative;
+  height: 100vh;
+  background-color: aqua;
+  color: aqua;
 }
