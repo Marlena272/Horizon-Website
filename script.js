@@ -9,5 +9,11 @@ function changeElement() {
     sliderImg.src = images[activeElement]
 
 }
-
 setInterval(changeElement, 5000)
+
+
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': "Zdjęcie %1 z %2"
+})

@@ -160,6 +160,10 @@ nav ul li a:hover {
   font-family: 'Open Sans';
 }
 
+.sections .white {
+  color: white;
+}
+
 .sections .aboutTheGameText {
   width: 40%;
   margin: 50px;
@@ -172,10 +176,6 @@ nav ul li a:hover {
   margin: 50px;
   top: 50vw;
   font-family: 'Open Sans';
-}
-
-.sections .white {
-  color: white;
 }
 
 .sections .left {
@@ -200,4 +200,50 @@ nav ul li a:hover {
 
 .sections .logoHorizon {
   width: 70%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gallery {
+  position: relative;
+  min-height: 100vh;
+  background-color: #dadada;
+}
+
+.imagesGallery {
+  min-height: 80vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  padding-bottom: 50px;
+}
+
+.imagesGallery a {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.H1_Title_Gallery {
+  position: relative;
+  font-size: 35px;
+  font-family: 'horizon', serif;
+  text-align: center;
+  font-size: 60px;
+  padding: 30px;
 }

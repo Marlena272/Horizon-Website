@@ -25,9 +25,7 @@
     }
 
     .H1_Title {
-        font-size: 35px;
-        font-family: 'horizon', serif;
-        text-align: center;
+        @include H1_Title();
     }
 
     .Aloy_Text {
@@ -35,6 +33,10 @@
         padding: 50px;
         font-family: 'Open Sans';
 
+    }
+
+    .white {
+        color: white;
     }
 
     .aboutTheGameText {
@@ -51,9 +53,7 @@
         font-family: 'Open Sans';
     }
 
-    .white {
-        color: white;
-    }
+
 
     .left {
         position: absolute;

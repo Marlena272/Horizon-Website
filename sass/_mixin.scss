@@ -3,3 +3,9 @@
     flex-direction: $rowColumn;
     justify-content: $justifyContent;
 }
+
+@mixin H1_Title() {
+    font-size: 35px;
+    font-family: 'horizon', serif;
+    text-align: center;
+}
