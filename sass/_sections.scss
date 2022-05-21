@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+.sections {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .aboutTheGamePicture {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 20%;
+    }
+
+    .aboutTheGamePicture2 {
+        position: relative;
+        width: 40%;
+        margin: 50px;
+    }
+
+    .H1_Title {
+        font-size: 35px;
+        font-family: 'horizon', serif;
+        text-align: center;
+    }
+
+    .Aloy_Text {
+        text-align: center;
+        padding: 50px;
+        font-family: 'Open Sans';
+
+    }
+
+    .aboutTheGameText {
+        width: 40%;
+        margin: 50px;
+        top: 50vw;
+        font-family: 'Open Sans';
+    }
+
+    .horizonZeroDawnText {
+        width: 40%;
+        margin: 50px;
+        top: 50vw;
+        font-family: 'Open Sans';
+    }
+
+    .white {
+        color: white;
+    }
+
+    .left {
+        position: absolute;
+        left: 50%;
+    }
+
+    .aloyPicure {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .aboutTheGameTextForbidden {
+        position: absolute;
+        width: 40%;
+        margin: 50px;
+        left: 50vw;
+        font-family: 'Open Sans';
+    }
+
+    .logoHorizon {
+        width: 70%;
+    }
+
+
+}

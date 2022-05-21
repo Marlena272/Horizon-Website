@@ -122,9 +122,82 @@ nav ul li a:hover {
   margin: 0;
 }
 
-.aboutTheGame {
+.sections {
   position: relative;
   height: 100vh;
-  background-color: aqua;
-  color: aqua;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sections .aboutTheGamePicture {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 20%;
+}
+
+.sections .aboutTheGamePicture2 {
+  position: relative;
+  width: 40%;
+  margin: 50px;
+}
+
+.sections .H1_Title {
+  font-size: 35px;
+  font-family: 'horizon', serif;
+  text-align: center;
+}
+
+.sections .Aloy_Text {
+  text-align: center;
+  padding: 50px;
+  font-family: 'Open Sans';
+}
+
+.sections .aboutTheGameText {
+  width: 40%;
+  margin: 50px;
+  top: 50vw;
+  font-family: 'Open Sans';
+}
+
+.sections .horizonZeroDawnText {
+  width: 40%;
+  margin: 50px;
+  top: 50vw;
+  font-family: 'Open Sans';
+}
+
+.sections .white {
+  color: white;
+}
+
+.sections .left {
+  position: absolute;
+  left: 50%;
+}
+
+.sections .aloyPicure {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.sections .aboutTheGameTextForbidden {
+  position: absolute;
+  width: 40%;
+  margin: 50px;
+  left: 50vw;
+  font-family: 'Open Sans';
+}
+
+.sections .logoHorizon {
+  width: 70%;
 }
