@@ -1,3 +1,20 @@
+$('#navAboutTheGame').on('click', function () {
+    $('body, html').animate({
+        scrollTop: $('#AboutTheGame').offset().top
+    })
+})
+
+$('.navigationList a').on("click", function () {
+    const downloadId = $(this).attr('id');
+    const lengthString = downloadId.length;
+    const goToSection = "#" + downloadId.slice(3, lengthString)
+    console.log(goToSection);
+
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top
+    })
+})
+
 const images = ['graphics/horizon_1.jpg', 'graphics/horizon_2.jpg', 'graphics/horizon_3.jpg', 'graphics/horizon_4.jpg', 'graphics/horizon_5.jpg', 'graphics/horizon_6.jpg', 'graphics/horizon_7.jpg'];
 const sliderImg = document.querySelector('.sliderImg');
 let activeElement = 0;
@@ -10,7 +27,6 @@ function changeElement() {
 
 }
 setInterval(changeElement, 5000)
-
 
 lightbox.option({
     'resizeDuration': 200,

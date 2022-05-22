@@ -16,20 +16,20 @@
 
     <nav class="navigation">
         <ul class="navigationList">
-            <li><a href="#">ABOUT THE GAME</a></li>
-            <li><a href="#">ALOY</a></li>
-            <li><a href="#">HORIZON ZERO DAWN</a></li>
-            <li><a href="#">HORIZON FORBIDDEN WEST</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">ABOUT THE WEBSITE</a></li>
+            <li><a id="navAboutTheGame" href="#">ABOUT THE GAME</a></li>
+            <li><a id="navAloy" href="#">ALOY</a></li>
+            <li><a id="navHorizonZeroDawn" href="#">HORIZON ZERO DAWN</a></li>
+            <li><a id="navHorizonForbiddenWest" href="#">HORIZON FORBIDDEN WEST</a></li>
+            <li><a id="navGallery" href="#">GALLERY</a></li>
+            <li><a id="navEnding" href="#">ABOUT THE WEBSITE</a></li>
         </ul>
     </nav>
 
-    <section class="slider">
+    <section id="Slider" class="slider">
         <img src="graphics\horizon_1.jpg" alt="Slider" class="sliderImg">
     </section>
 
-    <section class="sections">
+    <section id="AboutTheGame" class="sections">
         <img src="graphics\horizon_AboutTheGame.jpg" alt="Background_aboutTheGame" class="aboutTheGamePicture">
         <img src="graphics\horizon_AboutTheGame2.jpg" alt="Background_aboutTheGame" class="aboutTheGamePicture2">
 
@@ -56,7 +56,7 @@
         </article>
     </section>
 
-    <section class="sections">
+    <section id="Aloy" class="sections">
         <img src="graphics\aloy.jpg" alt="Background_aboutTheGame" class="aloyPicure">
 
         <article class="Aloy_Text white">
@@ -85,7 +85,7 @@
         </article>
     </section>
 
-    <section class="sections">
+    <section id="HorizonZeroDawn" class="sections">
         <img src="graphics\horizonZeroDawn.jpg" alt="Background_aboutTheGame" class="aloyPicure">
 
         <article class="horizonZeroDawnText">
@@ -110,7 +110,7 @@
         </article>
     </section>
 
-    <section class="sections">
+    <section id="HorizonForbiddenWest" class="sections">
         <img src="graphics\horizonForbiddenWest.jpg" alt="Background_aboutTheGame" class="aloyPicure">
 
         <article class="aboutTheGameTextForbidden">
@@ -136,11 +136,9 @@
         </article>
     </section>
 
-    <section class="gallery">
+    <section id="Gallery" class="gallery">
         <h1 class="H1_Title_Gallery">Gallery</h1>
         <section class="imagesGallery">
-
-
             <a href="graphics/g1H.jpg" data-lightbox="image-1"><img src="graphics/g1.jpg" alt=""></img></a>
             <a href="graphics/g2H.jpg" data-lightbox="image-1"><img src="graphics/g2.jpg" alt=""></img></a>
             <a href="graphics/g3H.jpg" data-lightbox="image-1"><img src="graphics/g3.jpg" alt=""></img></a>
@@ -152,9 +150,48 @@
             <a href="graphics/g9H.jpg" data-lightbox="image-1"><img src="graphics/g9.jpg" alt=""></img></a>
         </section>
     </section>
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="dist/js/lightbox.js"></script>
+
+    <section id="Ending" class="end">
+        <img src="graphics\end.jpg" class="endPicture">
+        <article class="galleryText">
+            <h1 class="H1_Title_Gallery">About the website</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra
+            odio id diam molestie, vitae porta purus luctus. Nulla facilisi. Nunc eget congue sem, non ultricies turpis.
+            Morbi tincidunt sed ante quis feugiat.
+            <br><br>
+            Suspendisse potenti. Sed tincidunt diam felis, at lobortis libero
+            imperdiet at. Phasellus quis porta ligula, commodo euismod justo. Sed quis tellus efficitur leo vestibulum
+            fermentum. Fusce eleifend euismod dolor, nec accumsan ex. Duis lorem velit, feugiat vel pulvinar lobortis,
+            consequat sed nunc. Etiam sit amet nisl ex.
+            <br><br>
+            Suspendisse potenti. Sed tincidunt diam felis, at lobortis libero
+            imperdiet at. Phasellus quis porta ligula, commodo euismod justo. Sed quis tellus efficitur leo vestibulum
+            fermentum. Fusce eleifend euismod dolor, nec accumsan ex. Duis lorem velit, feugiat vel pulvinar lobortis,
+            consequat sed nunc. Etiam sit amet nisl ex.
+            <br><br>
+            Suspendisse potenti. Sed tincidunt diam felis, at lobortis libero
+            imperdiet at. Phasellus quis porta ligula, commodo euismod justo. Sed quis tellus efficitur leo vestibulum
+            fermentum. Fusce eleifend euismod dolor, nec accumsan ex. Duis lorem velit, feugiat vel pulvinar lobortis,
+            consequat sed nunc. Etiam sit amet nisl ex.
+        </article>
+
+
+        <footer id="footer" class="footer">
+            endisse potenti. Sed tincidunt diam felis, at lobortis libero
+            imperdiet at. Phasellus quis porta ligula, commodo euismod justo. Sed quis tellus efficitur leo vestibulum
+            fermentum. Fusce eleifend euismod dolor, nec accumsan ex.
+        </footer>
+
+
+    </section>
+
+
     <script src="script.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    </script>
+
+    <script src="dist/js/lightbox.js"></script>
+
 </body>
 
 </html>

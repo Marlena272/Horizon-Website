@@ -1,0 +1,37 @@
+.H1_Title_Gallery {
+    @include H1_Title();
+}
+
+.end {
+    position: relative;
+    height: 100vh;
+    font-family: "Open Sans";
+}
+
+.galleryText {
+    padding-top: 5vh;
+    padding-left: 40vw;
+    padding-right: 10vw;
+}
+
+.endPicture {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    height: 5vh;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 12px;
+    font-family: "Open Sans";
+    z-index: 1;
+}
