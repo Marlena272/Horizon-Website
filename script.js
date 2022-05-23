@@ -4,6 +4,21 @@ $('#navAboutTheGame').on('click', function () {
     })
 })
 
+$(document).on('scroll', function () {
+    if ($(window).scrollTop() > 40) {
+        $("nav").css("position", "fixed");
+        $("nav").css("height", "30px");
+        $("nav").css("line-height", "30px");
+        $("nav").css("opacity", "50%");
+    } else {
+        $("nav").css("position", "absolute");
+        $("nav").css("height", "40px");
+        $("nav").css("line-height", "40px");
+        $("nav").css("opacity", "70%");
+    }
+
+})
+
 $('.navigationList a').on("click", function () {
     const downloadId = $(this).attr('id');
     const lengthString = downloadId.length;

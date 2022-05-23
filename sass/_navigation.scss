@@ -3,7 +3,7 @@
     margin: 0
 }
 
-nav {
+.navigation {
     position: absolute;
     height: 40px;
     width: 100%;
@@ -12,7 +12,7 @@ nav {
     font-family: 'Open Sans';
     opacity: 70%;
     z-index: 1;
-    transition: .5s linear;
+    transition: 0.3s;
 
     &:hover {
         opacity: 85%;

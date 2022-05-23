@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-nav {
+.navigation {
   position: absolute;
   height: 40px;
   width: 100%;
@@ -12,15 +12,15 @@ nav {
   font-family: 'Open Sans';
   opacity: 70%;
   z-index: 1;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-nav:hover {
+.navigation:hover {
   opacity: 85%;
 }
 
-nav ul {
+.navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +33,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
+.navigation ul li {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -42,7 +42,7 @@ nav ul li {
       justify-content: space-around;
 }
 
-nav ul li a {
+.navigation ul li a {
   font-size: 16px;
   text-decoration: none;
   color: white;
@@ -58,7 +58,7 @@ nav ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+.navigation ul li a:hover {
   background-position: 0;
 }
 
