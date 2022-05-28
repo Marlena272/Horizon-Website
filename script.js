@@ -7,14 +7,10 @@ $('#navAboutTheGame').on('click', function () {
 $(document).on('scroll', function () {
     if ($(window).scrollTop() > 40) {
         $("nav").css("position", "fixed");
-        $("nav").css("height", "30px");
-        $("nav").css("line-height", "30px");
-        $("nav").css("opacity", "50%");
+        $("nav").css("opacity", "90%");
     } else {
         $("nav").css("position", "absolute");
-        $("nav").css("height", "40px");
-        $("nav").css("line-height", "40px");
-        $("nav").css("opacity", "70%");
+        $("nav").css("opacity", "60%");
     }
 
 })
@@ -48,3 +44,10 @@ lightbox.option({
     'wrapAround': true,
     'albumLabel': "Zdjęcie %1 z %2"
 })
+
+/*$(window).resize(function () {
+    const downloadId = $('aboutTheGamePicture2');
+    if (screen.width <= 1024) {
+        downloadId.removeClass('aboutTheGamePicture2');
+    }
+});*/

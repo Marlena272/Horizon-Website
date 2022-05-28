@@ -117,6 +117,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .slider {
+    height: 70vh;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -140,6 +146,7 @@
   height: 100%;
   width: 100%;
   opacity: 20%;
+  z-index: -1;
 }
 
 .sections .aboutTheGamePicture2 {
@@ -200,6 +207,47 @@
 
 .sections .logoHorizon {
   width: 70%;
+}
+
+@media (max-width: 1024px) {
+  .sections {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sections .aboutTheGamePicture2 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .sections .aboutTheGameText {
+    width: 90%;
+    margin: 50px;
+    top: 50vw;
+    font-family: 'Open Sans';
+  }
+  .sections .Aloy_Text {
+    text-align: left;
+  }
+  .sections .horizonZeroDawnText {
+    width: 90%;
+    margin: 50px;
+    top: 50vw;
+    font-family: 'Open Sans';
+  }
+  .sections .logoHorizon {
+    width: 40%;
+  }
+  .sections .aboutTheGameTextForbidden {
+    width: 90%;
+    margin: 50px;
+    font-family: 'Open Sans';
+    left: 0;
+  }
 }
 
 * {
@@ -274,7 +322,7 @@
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #4e4e4e;
@@ -285,4 +333,27 @@
   font-size: 12px;
   font-family: "Open Sans";
   z-index: 1;
+}
+
+.end a {
+  text-decoration: none;
+}
+
+.end a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .end {
+    position: relative;
+    height: 100%;
+    font-family: "Open Sans";
+  }
+  .galleryText {
+    padding-left: 40vw;
+    padding-right: 10vw;
+  }
+  .H1_Title_Gallery {
+    padding: 20px;
+  }
 }
