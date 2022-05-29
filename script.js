@@ -5,7 +5,7 @@ $('#navAboutTheGame').on('click', function () {
 })
 
 $(document).on('scroll', function () {
-    if ($(window).scrollTop() > 40) {
+    if ($(window).scrollTop() > 30) {
         $("nav").css("position", "fixed");
         $("nav").css("opacity", "90%");
     } else {

@@ -3,6 +3,8 @@
     margin: 0
 }
 
+
+
 .sections {
     position: relative;
     height: 100vh;
@@ -76,8 +78,6 @@
     .logoHorizon {
         width: 70%;
     }
-
-
 }
 
 @media (max-width: 1024px) {
@@ -121,5 +121,30 @@
             font-family: 'Open Sans';
             left: 0;
         }
+
+        .aloyPicure {
+            position: absolute;
+            width: auto;
+            z-index: -1;
+        }
+    }
+
+    #HorizonZeroDawn {
+        background-image: url("../graphics/horizonZeroDawn2.jpg");
+    }
+
+    #HorizonForbiddenWest {
+        background-image: url("../graphics/horizonForbiddenWest2.jpg");
+    }
+}
+
+@media (max-width: 700px) {
+    .sections {
+        font-size: 12px;
+
+    }
+
+    .sections .aboutTheGameTextForbidden {
+        position: static;
     }
 }

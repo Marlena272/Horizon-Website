@@ -62,6 +62,12 @@
   background-position: 0;
 }
 
+@media (max-width: 700px) {
+  .navigation ul li a {
+    font-size: 12px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -248,6 +254,26 @@
     font-family: 'Open Sans';
     left: 0;
   }
+  .sections .aloyPicure {
+    position: absolute;
+    width: auto;
+    z-index: -1;
+  }
+  #HorizonZeroDawn {
+    background-image: url("../graphics/horizonZeroDawn2.jpg");
+  }
+  #HorizonForbiddenWest {
+    background-image: url("../graphics/horizonForbiddenWest2.jpg");
+  }
+}
+
+@media (max-width: 700px) {
+  .sections {
+    font-size: 12px;
+  }
+  .sections .aboutTheGameTextForbidden {
+    position: static;
+  }
 }
 
 * {
@@ -322,8 +348,8 @@
 }
 
 .footer {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   background-color: #4e4e4e;
   height: 5vh;
@@ -332,7 +358,6 @@
   line-height: 5vh;
   font-size: 12px;
   font-family: "Open Sans";
-  z-index: 1;
 }
 
 .end a {
@@ -355,5 +380,14 @@
   }
   .H1_Title_Gallery {
     padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .end {
+    font-size: 12px;
+  }
+  .galleryText {
+    padding-left: 50vw;
   }
 }

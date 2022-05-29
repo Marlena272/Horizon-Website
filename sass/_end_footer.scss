@@ -23,8 +23,8 @@
 }
 
 .footer {
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     width: 100%;
     background-color: rgb(78, 78, 78);
     height: 5vh;
@@ -33,7 +33,7 @@
     line-height: 5vh;
     font-size: 12px;
     font-family: "Open Sans";
-    z-index: 1;
+
 }
 
 .end a {
@@ -51,7 +51,6 @@
         font-family: "Open Sans";
     }
 
-
     .galleryText {
         padding-left: 40vw;
         padding-right: 10vw;
@@ -62,4 +61,14 @@
         padding: 20px;
     }
 
+}
+
+@media (max-width: 700px) {
+    .end {
+        font-size: 12px;
+    }
+
+    .galleryText {
+        padding-left: 50vw;
+    }
 }
