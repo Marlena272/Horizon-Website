@@ -148,3 +148,21 @@
         position: static;
     }
 }
+
+@media (orientation: portrait) {
+    .sections {
+        height: 100%;
+        width: auto;
+    }
+
+    .sections .aboutTheGamePicture {
+        height: 100%;
+        width: auto;
+    }
+
+    .sections img {
+        left: -500px;
+        overflow: hidden;
+    }
+
+}

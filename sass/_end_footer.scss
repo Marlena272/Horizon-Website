@@ -63,12 +63,36 @@
 
 }
 
+@media (max-width: 768px) {
+
+    .endPicture {
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+        background-color: aqua;
+        height: auto;
+        overflow: hidden;
+
+    }
+
+    .end {
+        background-color: #e7e8ea;
+        z-index: -1;
+    }
+
+}
+
 @media (max-width: 700px) {
     .end {
         font-size: 12px;
     }
+}
 
+@media (max-width: 360px) {
     .galleryText {
-        padding-left: 50vw;
+        padding-top: 5vh;
+        text-align: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }

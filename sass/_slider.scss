@@ -42,5 +42,15 @@
 @media (max-width: 1024px) {
     .slider {
         height: 70vh;
+        width: 100vW;
+        overflow: hidden;
+    }
+}
+
+@media (orientation: portrait) {
+    .slider .sliderImg {
+        width: 200%;
+        position: absolute;
+        left: -300px
     }
 }

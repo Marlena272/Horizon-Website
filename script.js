@@ -51,3 +51,9 @@ lightbox.option({
         downloadId.removeClass('aboutTheGamePicture2');
     }
 });*/
+
+/*window.addEventListener('resize', function (event) {
+    var newWidth = window.innerWidth;
+    var newHeight = window.innerHeight;
+    console.log("Test")
+});*/

@@ -3,6 +3,8 @@
     margin: 0
 }
 
+
+
 .navigation {
     position: absolute;
     height: 40px;
@@ -23,8 +25,6 @@
         list-style-type: none;
 
         li {
-            flex-direction: column;
-            justify-content: space-around;
 
             a {
                 font-size: 16px;
@@ -50,9 +50,22 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     .navigation ul li a {
         font-size: 12px;
     }
+}
+
+@media (max-width: 576px) {
+
+    .navigation ul li a {
+        font-size: 10px;
+    }
+
+    .navigation ul {
+        flex-wrap: wrap;
+        line-height: 100%;
+    }
+
 }

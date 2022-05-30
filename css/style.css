@@ -33,15 +33,6 @@
   list-style-type: none;
 }
 
-.navigation ul li {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .navigation ul li a {
   font-size: 16px;
   text-decoration: none;
@@ -62,9 +53,20 @@
   background-position: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .navigation ul li a {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navigation ul li a {
+    font-size: 10px;
+  }
+  .navigation ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    line-height: 100%;
   }
 }
 
@@ -126,6 +128,16 @@
 @media (max-width: 1024px) {
   .slider {
     height: 70vh;
+    width: 100vW;
+    overflow: hidden;
+  }
+}
+
+@media (orientation: portrait) {
+  .slider .sliderImg {
+    width: 200%;
+    position: absolute;
+    left: -300px;
   }
 }
 
@@ -276,6 +288,21 @@
   }
 }
 
+@media (orientation: portrait) {
+  .sections {
+    height: 100%;
+    width: auto;
+  }
+  .sections .aboutTheGamePicture {
+    height: 100%;
+    width: auto;
+  }
+  .sections img {
+    left: -500px;
+    overflow: hidden;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -383,11 +410,32 @@
   }
 }
 
+@media (max-width: 768px) {
+  .endPicture {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    background-color: aqua;
+    height: auto;
+    overflow: hidden;
+  }
+  .end {
+    background-color: #e7e8ea;
+    z-index: -1;
+  }
+}
+
 @media (max-width: 700px) {
   .end {
     font-size: 12px;
   }
+}
+
+@media (max-width: 360px) {
   .galleryText {
-    padding-left: 50vw;
+    padding-top: 5vh;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
