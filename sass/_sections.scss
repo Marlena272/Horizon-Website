@@ -13,6 +13,15 @@
     display: flex;
     align-items: center;
 
+    .aboutTheGameText {
+        width: 40%;
+        margin: 50px;
+        top: 50vw;
+        font-family: 'Open Sans';
+        opacity: 0;
+        transition: 1.5s linear;
+    }
+
     .aboutTheGamePicture {
         position: absolute;
         height: 100%;
@@ -35,17 +44,12 @@
         text-align: center;
         padding: 50px;
         font-family: 'Open Sans';
+        opacity: 0;
+        transition: 1.5s linear;
     }
 
     .white {
         color: white;
-    }
-
-    .aboutTheGameText {
-        width: 40%;
-        margin: 50px;
-        top: 50vw;
-        font-family: 'Open Sans';
     }
 
     .horizonZeroDawnText {
@@ -53,6 +57,8 @@
         margin: 50px;
         top: 50vw;
         font-family: 'Open Sans';
+        opacity: 0;
+        transition: 1.5s linear;
     }
 
     .left {
@@ -60,7 +66,7 @@
         left: 50%;
     }
 
-    .aloyPicure {
+    .aloyPicture {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -68,19 +74,25 @@
     }
 
     .aboutTheGameTextForbidden {
-        position: absolute;
+        position: relative;
         width: 40%;
         margin: 50px;
         left: 50vw;
         font-family: 'Open Sans';
+        opacity: 0;
+        transition: 1.5s linear;
     }
 
     .logoHorizon {
         width: 70%;
     }
+
+    .opacity {
+        opacity: 100;
+    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
 
     .sections {
         position: relative;
@@ -147,6 +159,8 @@
     .sections .aboutTheGameTextForbidden {
         position: static;
     }
+
+
 }
 
 @media (orientation: portrait) {
@@ -156,8 +170,15 @@
     }
 
     .sections .aboutTheGamePicture {
-        height: 100%;
+        height: auto;
         width: auto;
+
+    }
+
+    .sections .aloyPicture {
+        height: auto;
+        width: auto;
+
     }
 
     .sections img {
